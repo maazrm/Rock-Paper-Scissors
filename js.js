@@ -7,10 +7,10 @@ function computerPlay() {
 
 
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection == computerSelection) {
+    if (playerSelection.toLowerCase() == computerSelection) {
         result = `You both played ${computerSelection} it's a draw`
-    } else if ((playerSelection == 'paper' && computerSelection == 'scissor') ||
-        (playerSelection == 'scissor' && computerSelection == 'paper')) {
+    } else if ((playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissor') ||
+        (playerSelection.toLowerCase() == 'scissor' && computerSelection == 'paper')) {
         result = `${playerSelection} beats ${computerSelection} You win!`;
         userScore++;
     } else {
