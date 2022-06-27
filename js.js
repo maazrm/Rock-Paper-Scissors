@@ -1,3 +1,4 @@
+// Function for computer to randomly pick
 function computerPlay() {
     const choices = ['rock', 'paper', 'scissor']
     const randomChoice = choices[Math.floor(Math.random() * choices.length)]
@@ -5,7 +6,7 @@ function computerPlay() {
     return (randomChoice)
 }
 
-
+// Function to play 1 round
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() == computerSelection) {
         result = `You both played ${computerSelection} it's a draw`
@@ -21,10 +22,11 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
+// score board
 let userScore = parseInt(0);
 let compScore = parseInt(0);
 
-
+// To play 5 rounds and keep track of the score
 function game() {
     for (let i = 0; i < 5; i++) {
         let playerSelection = prompt('Enter your choice:');
