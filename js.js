@@ -21,6 +21,19 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
+let userScore = parseInt(0);
+let compScore = parseInt(0);
 
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt('Enter your choice:');
+        const computerSelection = computerPlay();
+        console.log(playRound(playerSelection, computerSelection))
+        console.log('Your score:' + userScore);
+        console.log('Computer score:' + compScore);
+    }
+    return 'The game ends'
+}
 
 
